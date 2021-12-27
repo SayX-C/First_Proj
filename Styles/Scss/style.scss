@@ -1,4 +1,4 @@
-// $body-color: rgb(179, 116, 0);
+$body-color: rgb(179, 116, 0);
 $bgcolor: rgba(0, 247, 255, 0.52);
 $color: magenta;
 $navbaar: rgba(4, 92, 92, 0.582);
@@ -24,4 +24,9 @@ body {
 p {
     border: border-box;
     background-color: black;
+    color: primary;
+}
+
+@mixin primary {
+    color: primary;
 }

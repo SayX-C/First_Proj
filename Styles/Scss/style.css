@@ -1,4 +1,5 @@
 body {
+  color: #b37400;
   background-color: rgba(0, 247, 255, 0.52);
 }
 
@@ -16,5 +17,6 @@ body {
 p {
   border: border-box;
   background-color: black;
+  color: primary;
 }
 /*# sourceMappingURL=style.css.map */
