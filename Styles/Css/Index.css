@@ -1,0 +1,9 @@
+.title {
+    font-size: calc(1.525rem + 3.3vw);
+}
+
+.study-units {
+    border: 1px solid;
+    height: 50vh;
+    width: 50vw;
+}

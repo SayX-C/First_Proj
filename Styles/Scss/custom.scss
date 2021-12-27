@@ -1,0 +1,27 @@
+$body-color: rgb(226, 241, 19);
+
+body {
+    color: $body-color;
+
+    .study-units {
+        height: 500px;
+        width: 50%;
+
+        .su-1 {
+            display: block;
+            flex: initial;
+            border: 1px solid red;
+            height: 50px;
+            width: 50px;
+        }
+
+        .su-2 {
+            display: block;
+            border: 1px solid green;
+            height: 50px;
+            width: 50px;
+            align-items: stretch;
+            justify-content: center;
+        }
+    }
+}
