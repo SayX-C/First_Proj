@@ -1,0 +1,30 @@
+$body-color: rgb(179, 116, 0);
+$bgcolor: rgba(0, 247, 255, 0.52);
+$color: magenta;
+$navbaar: rgba(4, 92, 92, 0.582);
+
+body {
+	color: $body-color;
+	// color::after rgba(100, 112, 4, .3);
+	background-color: $bgcolor;
+}
+
+.hey {
+	color: $color;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: greenyellow;
+}
+
+.navbaar {
+	background-color: $navbaar;
+}
+
+p {
+	border: border-box;
+	background-color: black;
+	color: primary;
+}
+.pic-height {
+	min-height: 600px;
+}

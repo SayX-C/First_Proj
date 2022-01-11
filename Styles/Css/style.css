@@ -19,4 +19,9 @@ p {
   background-color: black;
   color: primary;
 }
+
+.pic-height {
+  min-height: 600px;
+}
+
 /*# sourceMappingURL=style.css.map */
