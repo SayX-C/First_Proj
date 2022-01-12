@@ -23,6 +23,11 @@ class second extends first
         echo " ==>>" . "<br>";
         echo "<strong><h1> !!!</strong>tum yeh job <mark> nhi</mark> <em>feild</em> hi chor do!!!</h1>";
     }
+    public function login($username, $password)
+    {
+        echo "$username " . " loged in" . "<br>";
+        echo "$password " . " is your password" . "<br>";
+    }
 }
 
 
@@ -30,3 +35,4 @@ class second extends first
 $second = new second();
 $second->get_array($second->vr);
 $second->job();
+$second->login("sakib", "123");
