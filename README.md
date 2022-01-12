@@ -1,2 +1,3 @@
 # First_Proj
-Config files for my GitHub profile.
+
+learning git and web development.
