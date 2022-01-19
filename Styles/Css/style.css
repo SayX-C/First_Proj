@@ -1,8 +1,7 @@
-body {
-  color: #b37400;
-  background-color: rgba(0, 247, 255, 0.52);
-}
-
+/* body {
+	color: $body-color;	
+	background-color: $bgcolor;
+} */
 .hey {
   color: magenta;
   font-size: 20px;
@@ -23,5 +22,20 @@ p {
 .pic-height {
   min-height: 600px;
 }
+
+/* project  */
+body {
+  background-image: url("../../Images/img1.jpeg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body .bg-clr {
+  background-color: rgba(95, 8, 145, 0.87);
+  height: 100%;
+  width: 100%;
+}
+
+/* project  end*/
 
 /*# sourceMappingURL=style.css.map */

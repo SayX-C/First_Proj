@@ -1,13 +1,12 @@
-$body-color: rgb(179, 116, 0);
+$body-color: rgb(0, 0, 0);
 $bgcolor: rgba(0, 247, 255, 0.52);
 $color: magenta;
 $navbaar: rgba(4, 92, 92, 0.582);
 
-body {
-	color: $body-color;
-	// color::after rgba(100, 112, 4, .3);
+/* body {
+	color: $body-color;	
 	background-color: $bgcolor;
-}
+} */
 
 .hey {
 	color: $color;
@@ -25,6 +24,7 @@ p {
 	background-color: black;
 	color: primary;
 }
+
 .pic-height {
 	min-height: 600px;
 }
