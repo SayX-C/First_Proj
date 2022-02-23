@@ -1,0 +1,29 @@
+<svg width="184" height="158" viewBox="0 0 184 158" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_34_1279" fill="white">
+<rect y="16.2671" width="184" height="122.346" rx="4.81675"/>
+</mask>
+<rect y="16.2671" width="184" height="122.346" rx="4.81675" fill="white" stroke="#183D68" stroke-width="15.4136" mask="url(#path-1-inside-1_34_1279)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M68.8821 150.331C72.53 150.331 75.4873 147.374 75.4873 143.726C75.4873 143.726 75.4873 143.726 75.4873 143.726H110.4V143.726C110.4 147.374 113.357 150.331 117.005 150.331H117.005H130.215V157.88H55.6719V150.331H68.8821C68.8821 150.331 68.8821 150.331 68.8821 150.331Z" fill="#183D68"/>
+<path d="M18.3037 24.9373H164.733L151.897 130.906H31.14L18.3037 24.9373Z" fill="#EEEEEE"/>
+<rect x="33.7173" y="9.52363" width="114.639" height="118.492" fill="white" stroke="white" stroke-width="5.7801"/>
+<path d="M126.199 24.6807H41.4241V26.6807H126.199V24.6807Z" fill="#E6E6E5"/>
+<path d="M111.424 29.6807H41.4241V31.6807H111.424V29.6807Z" fill="#E6E6E5"/>
+<path d="M137.759 19.9005H41.4241V22.4005H137.759V19.9005Z" fill="#E6E6E5"/>
+<rect x="41" y="35" width="101" height="32" fill="#E5E5E6"/>
+<rect x="41" y="70" width="49" height="14" fill="#E5E5E6"/>
+<rect x="41" y="87" width="23" height="17" fill="#183D68"/>
+<rect x="67" y="87" width="23" height="17" fill="#183D68"/>
+<rect x="93" y="87" width="23" height="17" fill="#E5E5E6"/>
+<rect x="119" y="87" width="23" height="17" fill="#E5E5E6"/>
+<rect x="93" y="70" width="49" height="14" fill="#E5E5E6"/>
+<path d="M131 53H82V55H131V53Z" fill="#183D68"/>
+<path d="M138 43H82V45H138V43Z" fill="#183D68"/>
+<path d="M138 48H82V50H138V48Z" fill="#183D68"/>
+<path d="M122 58H82V60H122V58Z" fill="#183D68"/>
+<path d="M45 63H76.7242V40H45V63ZM47.6692 60.3003L53.9988 51.5L57.9066 56.9333L60.3284 60.3003H55.485H47.6692ZM64.6448 47.565L73.8046 60.3003H61.4557L61.0713 59.7662L58.4703 56.1498L64.6448 47.565ZM52.0465 42.9893C53.4279 42.9893 54.5478 44.1093 54.5478 45.4908C54.5478 46.8723 53.4279 47.9922 52.0465 47.9922C50.665 47.9922 49.5451 46.8723 49.5451 45.4908C49.5453 44.1094 50.6649 42.9893 52.0465 42.9893Z" fill="#183D68"/>
+<path d="M31 12L151 12V0L31 0V12Z" fill="#C93636"/>
+<rect x="99" y="3" width="44.25" height="6" rx="3" fill="white"/>
+<circle cx="44" cy="6" r="3" fill="white"/>
+<circle cx="52" cy="6" r="3" fill="white"/>
+<circle cx="60" cy="6" r="3" fill="white"/>
+</svg>
