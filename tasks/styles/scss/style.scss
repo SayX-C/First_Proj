@@ -12,18 +12,13 @@ body {
     background: $white;
 }
 
-
-.bg-white {
-    background: $white !important;
-}
-
 .colorRed {
     color: $red;
 }
 
 section.banner-img-top {
     .banner-img {
-        width: 100vw;
+        width: 100%;
         max-height: 70vh;
     }
 
@@ -37,7 +32,12 @@ section.banner-img-top {
 }
 
 section.what-everest {
-    color: red;
+    .bg-blue {
+        background: $blue;
+        color: $white;
+        padding: 30px 30px;
+        display:flex;
+    }
 }
 
 section.investment-thesis-section {
@@ -219,9 +219,10 @@ section.data-glance {
         border-radius: 5px;
         overflow: hidden;
         position: relative;
-        padding: 30px;
+        padding: 20px;
         position: relative;
         margin: 10px 30px;
+        min-height: 115px;
     }
 }
 

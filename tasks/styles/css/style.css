@@ -11,16 +11,12 @@ body {
   background: #fff;
 }
 
-.bg-white {
-  background: #fff !important;
-}
-
 .colorRed {
   color: #C93636;
 }
 
 section.banner-img-top .banner-img {
-  width: 100vw;
+  width: 100%;
   max-height: 70vh;
 }
 section.banner-img-top .centered {
@@ -31,8 +27,11 @@ section.banner-img-top .centered {
   color: #fff;
 }
 
-section.what-everest {
-  color: red;
+section.what-everest .bg-blue {
+  background: #183c68;
+  color: #fff;
+  padding: 30px 30px;
+  display: flex;
 }
 
 section.investment-thesis-section {
@@ -188,9 +187,10 @@ section.data-glance .data-1 {
   border-radius: 5px;
   overflow: hidden;
   position: relative;
-  padding: 30px;
+  padding: 20px;
   position: relative;
   margin: 10px 30px;
+  min-height: 115px;
 }
 
 .flt-r {
