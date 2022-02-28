@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", georgia, serif;
+}
+
+body {
+    background: #FFF;
+}
+
+section.investment-thesis-section {
+    background: #f5f5f5;
+    padding: 50px 0;
+}
+
+.bg-white {
+    background: #fff !important;
+}
+
+.colorRed {
+    color: #C93636;
+}
+
+.banner-img {
+    min-width: 98.5vw;
+    max-height: 70vh;
+}
+
+.centered {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+}
+
+.everest-community {
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.bg-blue-1 {
+    background: #183c68;
+    color: #fff;
+    padding: 20px;
+    margin: auto;
+}
+
+.block {
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+    margin-top: unset;
+}
+
+.center-1 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: #fff;
+    -webkit-box-shadow: 0 2px 12px rgb(0 0 0 / 10%);
+    box-shadow: 0 2px 12px rgb(0 0 0 / 10%);
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 30px;
+    position: relative;
+    margin: 10px 30px;
+}
+
+.border-1 {
+    border: 1px solid #fff;
+    padding: 20px;
+}
+
+.border-2 {
+    background: #f5f5f5;
+    border: 1px solid #cecbcb;
+    padding: 30px;
+    border-radius: 5px;
+    width: 30%;
+}
+
+.data-1 {
+    background: #183c68;
+    color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    padding: 30px;
+    position: relative;
+    margin: 10px 30px;
+}
+
+.flt-r {
+    float: right;
+}
+
+.flt-l {
+    float: left;
+}
+
+.flt-c {
+    float: center;
+}
+
+.meeting-svg-1 {
+    max-width: 100px;
+    padding: 20px;
+}
+
+.meet-text {
+    padding: 10px;
+}
+
+.talk-directly {
+    margin-top: 10px;
+    padding: 50px;
+}
+
+.talk-1 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up-for-investor-alert {
+    background: #f5f5f5;
+    padding: 50px 0;
+}
+
+.sign-up-alt {
+    color: #183c68;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.btn-clr-blue {
+    background: #183c68;
+    color: #fff;
+    border-radius: 75px;
+}
+
+.download-1 {
+    background: #f5f5f5;
+    padding: 50px 0;
+}
