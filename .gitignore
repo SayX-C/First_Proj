@@ -1,4 +1,6 @@
 .DS_Store
 *.DS_Store
+*.vs_code
 
 Styles/.DS_Store
+tasks/.vscode/settings.json

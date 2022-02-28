@@ -1,3 +1,6 @@
+/* @import "custom"; */
+@import "colors";
+
 * {
     margin: 0;
     padding: 0;
@@ -6,36 +9,161 @@
 }
 
 body {
-    background: #FFF;
+    background: $white;
 }
 
-section.investment-thesis-section {
-    background: #f5f5f5;
-    padding: 50px 0;
-}
 
 .bg-white {
-    background: #fff !important;
+    background: $white !important;
 }
 
 .colorRed {
-    color: #C93636;
+    color: $red;
 }
 
-.banner-img {
-    min-width: 98.5vw;
-    max-height: 70vh;
+section.banner-img-top {
+    .banner-img {
+        width: 100vw;
+        max-height: 70vh;
+    }
+
+    .centered {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $white;
+    }
 }
 
-.centered {
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #FFFFFF;
+section.what-everest {
+    color: red;
 }
 
-.everest-community {
+section.investment-thesis-section {
+    background: $gray;
+    padding: 50px 0;
+
+    .card {
+        background: $white;
+        box-shadow: 0 2px 12px rgb(0 0 0 / 10%);
+        border-radius: 5px;
+        overflow: hidden;
+        padding: 10px;
+        position: relative;
+        margin: 10px 30px;
+        min-height: 90px;
+    }
+
+    input {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+    }
+
+    /* Accordion styles */
+    .tabs {
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+    }
+
+    .tab {
+        color: $black;
+        overflow: hidden;
+
+        &-label {
+            display: flex;
+            justify-content: space-between;
+            padding: 1em;
+            background: $white;
+            font-weight: bold;
+            cursor: pointer;
+            min-height: 40px;
+
+            /* Icon */
+            &::after {
+                content: "\276F";
+                text-align: center;
+                transition: all .35s;
+            }
+        }
+
+        &-content {
+            max-height: 0;
+            padding: 0 1em;
+            color: $black;
+            background: $white;
+            transition: all .35s;
+            overflow: hidden;
+
+        }
+
+        &-close {
+            display: flex;
+            justify-content: flex-end;
+            padding: 1em;
+            background: $white;
+            cursor: pointer;
+        }
+    }
+
+    // :checked
+    input:checked {
+        +.tab-label {
+
+            &::after {
+                transform: rotate(90deg);
+                min-height: 10px;
+
+            }
+        }
+
+        ~.tab-content {
+            max-height: 50vh;
+            min-height: 190px;
+            padding: 1em;
+        }
+    }
+
+    /* counter  */
+
+    .number-1 {
+        counter-reset: numbering-inc;
+        counter-increment: numbering-inc 0;
+
+        div.num-1:before {
+            content: counter(numbering-inc);
+            counter-increment: numbering-inc;
+            background: $red;
+            padding: 10px;
+            position: relative;
+            top: 0px;
+            font-weight: bold;
+            color: $white;
+            margin: 0px 10px;
+        }
+    }
+
+    .number-2 {
+        counter-reset: numbering-2;
+        counter-increment: numbering-2 3;
+
+        div.num-1:before {
+            content: counter(numbering-2);
+            counter-increment: numbering-2;
+            background: $red;
+            padding: 10px;
+            position: relative;
+            top: 0px;
+            font-weight: bold;
+            color: $white;
+            margin: 0px 10px;
+        }
+    }
+}
+
+section.everest-community {
     font-weight: bold;
     font-size: 1.5rem;
     display: flex;
@@ -45,10 +173,10 @@ section.investment-thesis-section {
 }
 
 .bg-blue-1 {
-    background: #183c68;
-    color: #fff;
-    padding: 20px;
-    margin: auto;
+    background: $blue;
+    color: $white;
+    padding: 30px 30px;
+
 }
 
 .block {
@@ -70,39 +198,31 @@ section.investment-thesis-section {
     margin-bottom: 20px;
 }
 
-.card {
-    background: #fff;
-    -webkit-box-shadow: 0 2px 12px rgb(0 0 0 / 10%);
-    box-shadow: 0 2px 12px rgb(0 0 0 / 10%);
-    border-radius: 5px;
-    overflow: hidden;
-    padding: 30px;
-    position: relative;
-    margin: 10px 30px;
-}
 
 .border-1 {
-    border: 1px solid #fff;
+    border: 1px solid $white;
     padding: 20px;
 }
 
 .border-2 {
-    background: #f5f5f5;
+    background: $gray;
     border: 1px solid #cecbcb;
     padding: 30px;
     border-radius: 5px;
     width: 30%;
 }
 
-.data-1 {
-    background: #183c68;
-    color: #fff;
-    border-radius: 5px;
-    overflow: hidden;
-    position: relative;
-    padding: 30px;
-    position: relative;
-    margin: 10px 30px;
+section.data-glance {
+    .data-1 {
+        background: $blue;
+        color: $white;
+        border-radius: 5px;
+        overflow: hidden;
+        position: relative;
+        padding: 30px;
+        position: relative;
+        margin: 10px 30px;
+    }
 }
 
 .flt-r {
@@ -126,35 +246,37 @@ section.investment-thesis-section {
     padding: 10px;
 }
 
-.talk-directly {
-    margin-top: 10px;
-    padding: 50px;
+section.talk-directly {
+    margin: 10px 30px;
+    padding: 30px;
+
+    .talk-1 {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
-.talk-1 {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-}
 
-.sign-up-for-investor-alert {
-    background: #f5f5f5;
+section.sign-up-for-investor-alert {
+    background: $gray;
     padding: 50px 0;
+
+    .sign-up-alt {
+        color: $blue;
+        padding: 20px;
+    }
 }
 
-.sign-up-alt {
-    color: #183c68;
-    font-weight: bold;
-    padding: 20px;
-}
 
 .btn-clr-blue {
-    background: #183c68;
-    color: #fff;
+    background: $blue;
+    color: $white;
     border-radius: 75px;
+    padding: 3px 30px;
 }
 
-.download-1 {
-    background: #f5f5f5;
+section.download-1 {
+    background: $white;
     padding: 50px 0;
 }

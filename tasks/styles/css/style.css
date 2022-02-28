@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* @import "custom"; */
 * {
   margin: 0;
   padding: 0;
@@ -6,12 +8,7 @@
 }
 
 body {
-  background: #FFF;
-}
-
-section.investment-thesis-section {
-  background: #f5f5f5;
-  padding: 50px 0;
+  background: #fff;
 }
 
 .bg-white {
@@ -22,20 +19,123 @@ section.investment-thesis-section {
   color: #C93636;
 }
 
-.banner-img {
-  min-width: 98.5vw;
+section.banner-img-top .banner-img {
+  width: 100vw;
   max-height: 70vh;
 }
-
-.centered {
+section.banner-img-top .centered {
   position: absolute;
   top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #FFFFFF;
+  color: #fff;
 }
 
-.everest-community {
+section.what-everest {
+  color: red;
+}
+
+section.investment-thesis-section {
+  background: #f5f5f5;
+  padding: 50px 0;
+  /* Accordion styles */
+  /* counter  */
+}
+section.investment-thesis-section .card {
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 10px;
+  position: relative;
+  margin: 10px 30px;
+  min-height: 90px;
+}
+section.investment-thesis-section input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+section.investment-thesis-section .tabs {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+section.investment-thesis-section .tab {
+  color: #000;
+  overflow: hidden;
+}
+section.investment-thesis-section .tab-label {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  min-height: 40px;
+  /* Icon */
+}
+section.investment-thesis-section .tab-label::after {
+  content: "❯";
+  text-align: center;
+  transition: all 0.35s;
+}
+section.investment-thesis-section .tab-content {
+  max-height: 0;
+  padding: 0 1em;
+  color: #000;
+  background: #fff;
+  transition: all 0.35s;
+  overflow: hidden;
+}
+section.investment-thesis-section .tab-close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
+  background: #fff;
+  cursor: pointer;
+}
+section.investment-thesis-section input:checked + .tab-label::after {
+  transform: rotate(90deg);
+  min-height: 10px;
+}
+section.investment-thesis-section input:checked ~ .tab-content {
+  max-height: 50vh;
+  min-height: 190px;
+  padding: 1em;
+}
+section.investment-thesis-section .number-1 {
+  counter-reset: numbering-inc;
+  counter-increment: numbering-inc 0;
+}
+section.investment-thesis-section .number-1 div.num-1:before {
+  content: counter(numbering-inc);
+  counter-increment: numbering-inc;
+  background: #C93636;
+  padding: 10px;
+  position: relative;
+  top: 0px;
+  font-weight: bold;
+  color: #fff;
+  margin: 0px 10px;
+}
+section.investment-thesis-section .number-2 {
+  counter-reset: numbering-2;
+  counter-increment: numbering-2 3;
+}
+section.investment-thesis-section .number-2 div.num-1:before {
+  content: counter(numbering-2);
+  counter-increment: numbering-2;
+  background: #C93636;
+  padding: 10px;
+  position: relative;
+  top: 0px;
+  font-weight: bold;
+  color: #fff;
+  margin: 0px 10px;
+}
+
+section.everest-community {
   font-weight: bold;
   font-size: 1.5rem;
   display: flex;
@@ -47,8 +147,7 @@ section.investment-thesis-section {
 .bg-blue-1 {
   background: #183c68;
   color: #fff;
-  padding: 20px;
-  margin: auto;
+  padding: 30px 30px;
 }
 
 .block {
@@ -70,17 +169,6 @@ section.investment-thesis-section {
   margin-bottom: 20px;
 }
 
-.card {
-  background: #fff;
-  -webkit-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  overflow: hidden;
-  padding: 30px;
-  position: relative;
-  margin: 10px 30px;
-}
-
 .border-1 {
   border: 1px solid #fff;
   padding: 20px;
@@ -94,7 +182,7 @@ section.investment-thesis-section {
   width: 30%;
 }
 
-.data-1 {
+section.data-glance .data-1 {
   background: #183c68;
   color: #fff;
   border-radius: 5px;
@@ -126,25 +214,22 @@ section.investment-thesis-section {
   padding: 10px;
 }
 
-.talk-directly {
-  margin-top: 10px;
-  padding: 50px;
+section.talk-directly {
+  margin: 10px 30px;
+  padding: 30px;
 }
-
-.talk-1 {
+section.talk-directly .talk-1 {
   display: grid;
   justify-content: center;
   align-items: center;
 }
 
-.sign-up-for-investor-alert {
+section.sign-up-for-investor-alert {
   background: #f5f5f5;
   padding: 50px 0;
 }
-
-.sign-up-alt {
+section.sign-up-for-investor-alert .sign-up-alt {
   color: #183c68;
-  font-weight: bold;
   padding: 20px;
 }
 
@@ -152,10 +237,11 @@ section.investment-thesis-section {
   background: #183c68;
   color: #fff;
   border-radius: 75px;
+  padding: 3px 30px;
 }
 
-.download-1 {
-  background: #f5f5f5;
+section.download-1 {
+  background: #fff;
   padding: 50px 0;
 }
 
