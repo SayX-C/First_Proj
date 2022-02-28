@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* @import "custom"; */
 * {
   margin: 0;
   padding: 0;
@@ -9,10 +8,6 @@
 
 body {
   background: #fff;
-}
-
-.colorRed {
-  color: #C93636;
 }
 
 section.banner-img-top .banner-img {
@@ -34,11 +29,26 @@ section.what-everest .bg-blue {
   display: flex;
 }
 
+section.everest-community {
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+}
+
 section.investment-thesis-section {
   background: #f5f5f5;
   padding: 50px 0;
   /* Accordion styles */
   /* counter  */
+}
+section.investment-thesis-section .title {
+  font-size: 1.5em;
+  font-weight: bolder;
+  padding: 30px 0;
+  color: #183c68;
 }
 section.investment-thesis-section .card {
   background: #fff;
@@ -49,6 +59,13 @@ section.investment-thesis-section .card {
   position: relative;
   margin: 10px 30px;
   min-height: 90px;
+}
+section.investment-thesis-section .block {
+  overflow: hidden;
+  padding: 10px;
+  position: relative;
+  margin-top: unset;
+  display: inline-block;
 }
 section.investment-thesis-section input {
   position: absolute;
@@ -107,7 +124,7 @@ section.investment-thesis-section .number-1 {
   counter-reset: numbering-inc;
   counter-increment: numbering-inc 0;
 }
-section.investment-thesis-section .number-1 div.num-1:before {
+section.investment-thesis-section .number-1 li:before {
   content: counter(numbering-inc);
   counter-increment: numbering-inc;
   background: #C93636;
@@ -122,7 +139,7 @@ section.investment-thesis-section .number-2 {
   counter-reset: numbering-2;
   counter-increment: numbering-2 3;
 }
-section.investment-thesis-section .number-2 div.num-1:before {
+section.investment-thesis-section .number-2 li:before {
   content: counter(numbering-2);
   counter-increment: numbering-2;
   background: #C93636;
@@ -132,53 +149,6 @@ section.investment-thesis-section .number-2 div.num-1:before {
   font-weight: bold;
   color: #fff;
   margin: 0px 10px;
-}
-
-section.everest-community {
-  font-weight: bold;
-  font-size: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 50px;
-}
-
-.bg-blue-1 {
-  background: #183c68;
-  color: #fff;
-  padding: 30px 30px;
-}
-
-.block {
-  overflow: hidden;
-  padding: 10px;
-  position: relative;
-  margin-top: unset;
-}
-
-.center-1 {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-}
-
-.block-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.border-1 {
-  border: 1px solid #fff;
-  padding: 20px;
-}
-
-.border-2 {
-  background: #f5f5f5;
-  border: 1px solid #cecbcb;
-  padding: 30px;
-  border-radius: 5px;
-  width: 30%;
 }
 
 section.data-glance .data-1 {
@@ -191,6 +161,59 @@ section.data-glance .data-1 {
   position: relative;
   margin: 10px 30px;
   min-height: 115px;
+}
+section.data-glance .border-1 {
+  border: 1px solid #fff;
+  padding: 20px;
+}
+section.data-glance .bg-blue-1 {
+  background: #183c68;
+  color: #fff;
+  padding: 30px 30px;
+}
+
+section.talk-directly {
+  margin: 10px 30px;
+  padding: 30px;
+}
+section.talk-directly .talk-1 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+section.talk-directly .meeting-svg-1 {
+  max-width: 100px;
+  padding: 20px;
+}
+section.talk-directly .meet-text {
+  padding: 10px;
+}
+section.talk-directly .border-2 {
+  background: #f5f5f5;
+  border: 1px solid #cecbcb;
+  padding: 30px;
+  border-radius: 5px;
+  width: 30%;
+}
+
+section.sign-up-for-investor-alert {
+  background: #f5f5f5;
+  padding: 50px 0;
+}
+section.sign-up-for-investor-alert .sign-up-alt {
+  color: #183c68;
+  padding: 20px;
+}
+
+section.download-1 {
+  background: #fff;
+  padding: 50px 0;
+}
+
+.center-1 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 .flt-r {
@@ -205,44 +228,11 @@ section.data-glance .data-1 {
   float: center;
 }
 
-.meeting-svg-1 {
-  max-width: 100px;
-  padding: 20px;
-}
-
-.meet-text {
-  padding: 10px;
-}
-
-section.talk-directly {
-  margin: 10px 30px;
-  padding: 30px;
-}
-section.talk-directly .talk-1 {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-}
-
-section.sign-up-for-investor-alert {
-  background: #f5f5f5;
-  padding: 50px 0;
-}
-section.sign-up-for-investor-alert .sign-up-alt {
-  color: #183c68;
-  padding: 20px;
-}
-
 .btn-clr-blue {
   background: #183c68;
   color: #fff;
   border-radius: 75px;
   padding: 3px 30px;
-}
-
-section.download-1 {
-  background: #fff;
-  padding: 50px 0;
 }
 
 /*# sourceMappingURL=style.css.map */
