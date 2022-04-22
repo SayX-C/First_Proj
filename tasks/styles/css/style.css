@@ -22,7 +22,7 @@ section.banner-img-top .centered {
 section.what-everest .bg-blue {
   background: #183c68;
   color: #fff;
-  padding: 30px 30px;
+  padding: 30px;
   display: flex;
 }
 section.what-everest .blog-content-1 {
@@ -59,7 +59,7 @@ section.investment-thesis-section {
 section.investment-thesis-section .title {
   font-size: 1.5em;
   font-weight: bolder;
-  padding: 0px 0px;
+  padding: 0;
   padding-bottom: 20px;
   color: #183c68;
 }
@@ -166,7 +166,7 @@ section.investment-thesis-section .number-1 li:before {
   top: 20px;
   font-weight: bold;
   color: #fff;
-  margin: 0px 10px;
+  margin: 0 10px;
   z-index: 1;
   margin: 60px;
 }
@@ -189,7 +189,7 @@ section.data-glance .border-1 {
 section.data-glance .bg-blue-1 {
   background: #183c68;
   color: #fff;
-  padding: 30px 30px;
+  padding: 30px;
   padding-left: 2%;
 }
 section.data-glance .country-name {
@@ -204,7 +204,7 @@ section.data-glance b {
 section.data-glance .title {
   font-size: 1.5em;
   font-weight: bold;
-  padding: 30px 0px;
+  padding: 30px 0;
   padding-bottom: 30px;
   color: #fff;
 }
@@ -222,13 +222,13 @@ section.data-glance .content-1 {
 }
 
 section.talk-directly {
-  margin: 10px 10px;
-  padding: 30px 30px;
+  margin: 10px;
+  padding: 30px;
 }
 section.talk-directly .title {
   font-size: 1.8em;
   font-weight: 600;
-  padding: 30px 0px;
+  padding: 30px 0;
   padding-bottom: 30px;
   color: #183c68;
   display: flex;
@@ -272,7 +272,7 @@ section.talk-directly .border-1 {
   section.talk-directly .border-1 {
     flex-direction: column;
     align-items: start;
-    margin: 10px 10px;
+    margin: 10px;
     padding: 10px 20px;
   }
 }
@@ -296,7 +296,7 @@ section.talk-directly .content-1 p {
 
 section.sign-up-for-investor-alert {
   background: #f5f5f5;
-  padding: 30px 30px;
+  padding: 30px;
 }
 section.sign-up-for-investor-alert .title {
   color: #183c68;
@@ -313,17 +313,17 @@ section.sign-up-for-investor-alert .img-phn {
 }
 @media screen and (max-width: 767px) {
   section.sign-up-for-investor-alert .img-phn {
-    top: 0px;
+    top: 0;
   }
 }
 section.sign-up-for-investor-alert .form-control {
   border: 1px #ccc !important;
-  border-radius: 0px !important;
+  border-radius: 0 !important;
 }
 
 section.download-1 {
   background: #fff;
-  padding: 30px 30px;
+  padding: 30px;
 }
 section.download-1 .title {
   color: #183c68;
@@ -333,7 +333,7 @@ section.download-1 .title {
 }
 section.download-1 .form-control {
   border: 1px #fff !important;
-  border-radius: 0px !important;
+  border-radius: 0 !important;
   background: #f5f5f5;
 }
 
@@ -362,5 +362,3 @@ section.download-1 .form-control {
   border-radius: 75px;
   padding: 3px 30px;
 }
-
-/*# sourceMappingURL=style.css.map */
